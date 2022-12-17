@@ -1,0 +1,10 @@
+.header__container{
+  position: relative;
+  margin: 0 auto 20px;
+}
+@media (max-width:680px){
+  .header__container{
+    width: 70vw;
+    height: 35vw;
+  }
+}

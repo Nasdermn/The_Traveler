@@ -1,5 +1,5 @@
 .elements__text {
-  max-width: 220px; /*чтобы кнопка "like" не обрезалась*/
+  max-width: 80%;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
@@ -7,4 +7,18 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media screen and (min-width:201px) and (max-width:680px){
+  .elements__text{
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width:200px){
+  .elements__text{
+    max-width: 70%;
+    font-size: 12px;
+    line-height: 22px;
+  }
 }

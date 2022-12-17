@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dan Causelove">
-    <title>Проект "Место"</title>
+    <title>Проект "The Traveler"</title>
     <link rel="stylesheet" href="pages/index.css">
   </head>
   <body class="body">
     <div class="page">
       <header class="header">
-        <img src="images/logo.svg" alt="Проект Место" class="header__logo">
+        <div class="header__container">
+          <img src="images/frame.png" alt="Рамка логотипа" class="header__logo">
+          <h1 class="header__title">The Traveler</h1>
+        </div>
       </header>
       <main class ="content">
         <section class="profile">
           <div class="profile__person">
-            <img src="images/jack.png" alt="Жак-Ив Кусто" class="profile__avatar">
+            <img src="images/gena.jpg" alt="Фото профиля" class="profile__avatar">
             <div class="profile__info">
-                <div class="profile__name-edit">
-                  <h1 class="profile__name">Жак-Ив Кусто</h1>
-                  <button class="profile__edit-button" type="button">
-                    <img src="images/pencil.png" alt="Кнопка «Изменить»" class="profile__symbol profile__symbol_pencil">
-                  </button>
-                </div>
-              <p class="profile__description">Исследователь океана</p>
+              <div class="profile__name-edit">
+                <button class="profile__edit-button" type="button">
+                  <img src="images/pencil.png" alt="Кнопка «Изменить»" class="profile__symbol profile__symbol_pencil">
+                </button>
+                <h2 class="profile__name">Геннадий Бегемотов</h2>
+              </div>
+              <p class="profile__description">Фотограф-любитель</p>
             </div>
           </div>
           <button class="profile__add-button" type="button">
@@ -44,7 +47,7 @@
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__text">&copy; 2022 Mesto Russia</p>
+        <p class="footer__text">&copy; The Traveler 2023 by Nasdermn</p>
       </footer>
       <div class="popup popup_edit-element">
         <div class="popup__container">
@@ -53,6 +56,7 @@
           <form class="popup__form" name="popupform">
             <input type="text" class="popup__input popup__input_field_name" name="popupname" placeholder="Введите имя">
             <input type="text" class="popup__input popup__input_field_description" name="popupdescription" placeholder="Введите описание">
+            <input type="text" class="popup__input popup__input_field_avatar" name="popupavatar" placeholder="Ссылка на фото профиля">
             <button type="submit" class="popup__button">Сохранить</button>
           </form>
         </div>
@@ -60,7 +64,7 @@
       <div class="popup popup_add-element">
         <div class="popup__container">
           <button class="popup__cross" type="button"></button>
-          <p class="popup__title">Новое место</p>
+          <p class="popup__title">Новое фото</p>
           <form class="popup__form" name="popupform">
             <input type="text" class="popup__input popup__input_field_place" name="popupplace" placeholder="Название">
             <input type="text" class="popup__input popup__input_field_link" name="popuplink" placeholder="Ссылка на картинку">
@@ -70,7 +74,7 @@
       </div>
       <div class="popup popup_full-image">
         <div class="popup__figure">
-          <img class="popup__image" src="-" alt="Фото элемента">
+          <img class="popup__image" src="" alt="Фото элемента">
           <button class="popup__cross" type="button"></button>
           <figcaption class="popup__figcaption"></figcaption>
         </div>

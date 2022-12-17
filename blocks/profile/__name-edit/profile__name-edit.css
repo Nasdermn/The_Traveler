@@ -1,13 +1,14 @@
 .profile__name-edit {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 18px;
-  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width:680px){
   .profile__name-edit{
     gap: 10px;
+    align-items: center;
   }
 }
